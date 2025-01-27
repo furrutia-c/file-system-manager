@@ -18,3 +18,30 @@ To use this package, ensure your Laravel application has the following stack con
 2. **Inertia.js**: To handle pages and navigation without full-page reloads.
 3. **Vue 3**: For building reactive components on the frontend.
 4. **Tailwind CSS**: For consistent and modern styling in the interface.
+
+## Installation Guide
+
+### Installing in Development Mode (Inside the `packages` Directory)
+
+1. **Create the `packages` Directory**  
+   If your Laravel project doesn’t already have a `packages` directory, create it at the root level of your project:
+   ```bash
+   mkdir packages
+   ```
+2. **Clone the Repository**
+   ```bash
+   git clone https://github.com/furrutia-c/file-system-manager.git packages/furrutiac/file-system-manager
+3. **Update the `composer.json` File**
+   ```
+   "repositories": [
+        {
+            "type": "path",
+            "url": "packages/furrutiac/file-system-manager",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
+4. **Install package**
+   ````
+   composer require furrutiac/file-system-manager:@dev
