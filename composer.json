@@ -1,0 +1,22 @@
+{
+  "name": "furrutiac/file-system-manager",
+  "description": "Gestor de ficheros vía FTP con Vue3, Inertia y Tailwind",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "Furrutiac\\FileSystemManager\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Furrutiac\\FileSystemManager\\FileSystemServiceProvider"
+      ]
+    }
+  },
+  "require": {
+    "php": "^8.3",
+    "laravel/framework": "^11.0",
+    "league/flysystem-ftp": "^3.29"
+  }
+}
